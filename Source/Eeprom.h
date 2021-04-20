@@ -131,7 +131,6 @@ namespace EEasyXB
     private:
         static Eeprom* m_instance;
         EepromData m_data;
-        EepromData m_userFacingData;
         bool m_dataIsInitialized;
 
         // Singleton - keep these private!!
