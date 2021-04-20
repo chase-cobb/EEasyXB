@@ -1,0 +1,130 @@
+\hypertarget{struct_e_easy_x_b_1_1_eeprom_data}{}\doxysection{E\+Easy\+XB\+::Eeprom\+Data Struct Reference}
+\label{struct_e_easy_x_b_1_1_eeprom_data}\index{EEasyXB::EepromData@{EEasyXB::EepromData}}
+
+
+Data structure to define the structure of the \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} on the original Xbox.  
+
+
+
+
+{\ttfamily \#include $<$Eeprom\+Data.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a5d1b24e740c8a319b32f989c7aa7306d}\label{struct_e_easy_x_b_1_1_eeprom_data_a5d1b24e740c8a319b32f989c7aa7306d}} 
+unsigned char {\bfseries hmac\+Sha1\+Hash} \mbox{[}20\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a2bc403928ef6b3ab5646880c479fb3da}\label{struct_e_easy_x_b_1_1_eeprom_data_a2bc403928ef6b3ab5646880c479fb3da}} 
+unsigned char {\bfseries confounder} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a8681f4320a737fe2f5402d11f17b96e7}\label{struct_e_easy_x_b_1_1_eeprom_data_a8681f4320a737fe2f5402d11f17b96e7}} 
+unsigned char {\bfseries hdd\+Key} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ab8044202b960e5746adc1aafcb4b47f9}\label{struct_e_easy_x_b_1_1_eeprom_data_ab8044202b960e5746adc1aafcb4b47f9}} 
+unsigned int {\bfseries region\+Flags}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a4d6b33ab3b02c9e2384201b3ea5e53db}\label{struct_e_easy_x_b_1_1_eeprom_data_a4d6b33ab3b02c9e2384201b3ea5e53db}} 
+unsigned int {\bfseries factory\+Checksum}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a0ab80af8e9f52cf69021415e1deff822}\label{struct_e_easy_x_b_1_1_eeprom_data_a0ab80af8e9f52cf69021415e1deff822}} 
+char {\bfseries serial} \mbox{[}12\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_aa17b38962f0f6517c1f6e30030fe7b1d}\label{struct_e_easy_x_b_1_1_eeprom_data_aa17b38962f0f6517c1f6e30030fe7b1d}} 
+unsigned char {\bfseries mac\+Address} \mbox{[}6\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ab7af8169d1499ea6df59042e6711e035}\label{struct_e_easy_x_b_1_1_eeprom_data_ab7af8169d1499ea6df59042e6711e035}} 
+unsigned short {\bfseries padding46}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_acf1efdc7ab1b12142e7cb392e59545a8}\label{struct_e_easy_x_b_1_1_eeprom_data_acf1efdc7ab1b12142e7cb392e59545a8}} 
+unsigned char {\bfseries online\+Key} \mbox{[}16\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a8b9a9c62496d0b9f43fdb353f1a68760}\label{struct_e_easy_x_b_1_1_eeprom_data_a8b9a9c62496d0b9f43fdb353f1a68760}} 
+unsigned int {\bfseries video\+Standard\+Flags}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ad9ba12f26b4c3237d554998e18ec3bad}\label{struct_e_easy_x_b_1_1_eeprom_data_ad9ba12f26b4c3237d554998e18ec3bad}} 
+unsigned int {\bfseries padding5C}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a588e1fa047946753baa10623da1114a5}\label{struct_e_easy_x_b_1_1_eeprom_data_a588e1fa047946753baa10623da1114a5}} 
+unsigned int {\bfseries user\+Checksum}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a7d7aee02553499666b06d8bea497acf5}\label{struct_e_easy_x_b_1_1_eeprom_data_a7d7aee02553499666b06d8bea497acf5}} 
+unsigned int {\bfseries time\+Zone\+Bias}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a47507e684cdaff456335e04e08512cff}\label{struct_e_easy_x_b_1_1_eeprom_data_a47507e684cdaff456335e04e08512cff}} 
+char {\bfseries time\+Zone\+Standard\+Name} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a6b8ff2df3e4acabda77479aaae283af7}\label{struct_e_easy_x_b_1_1_eeprom_data_a6b8ff2df3e4acabda77479aaae283af7}} 
+char {\bfseries time\+Zone\+Daylight\+Name} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a0890da8f2dd7ae1b1795d01c43b2814f}\label{struct_e_easy_x_b_1_1_eeprom_data_a0890da8f2dd7ae1b1795d01c43b2814f}} 
+unsigned char {\bfseries padding70} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a5b8c61b057251006eee3333012adeef0}\label{struct_e_easy_x_b_1_1_eeprom_data_a5b8c61b057251006eee3333012adeef0}} 
+unsigned int {\bfseries time\+Zone\+Standard\+Starts}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ae5dcde5faab8ff67a251cd9f0827fd97}\label{struct_e_easy_x_b_1_1_eeprom_data_ae5dcde5faab8ff67a251cd9f0827fd97}} 
+unsigned int {\bfseries time\+Zone\+Daylight\+Starts}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_acbba4fb74a0854f76c084b568e62a1d8}\label{struct_e_easy_x_b_1_1_eeprom_data_acbba4fb74a0854f76c084b568e62a1d8}} 
+unsigned char {\bfseries padding80} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a77a5df46c66868b94e39b62453ca17b9}\label{struct_e_easy_x_b_1_1_eeprom_data_a77a5df46c66868b94e39b62453ca17b9}} 
+unsigned int {\bfseries time\+Zone\+Standard\+Bias}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a29a61fa98f2c6d35c98615a8e75045f5}\label{struct_e_easy_x_b_1_1_eeprom_data_a29a61fa98f2c6d35c98615a8e75045f5}} 
+unsigned int {\bfseries time\+Zone\+Daylight\+Bias}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_aa0f4ffd3609b9d2e323dfc96983d645b}\label{struct_e_easy_x_b_1_1_eeprom_data_aa0f4ffd3609b9d2e323dfc96983d645b}} 
+unsigned int {\bfseries language}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_abd9d017172ba87926199973f4af1b9f0}\label{struct_e_easy_x_b_1_1_eeprom_data_abd9d017172ba87926199973f4af1b9f0}} 
+unsigned int {\bfseries video\+Settings}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a91fe41b5033982e84c2897dfde80fbf2}\label{struct_e_easy_x_b_1_1_eeprom_data_a91fe41b5033982e84c2897dfde80fbf2}} 
+unsigned int {\bfseries audio\+Settings}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a1b45633f372c529639415c9276f7def9}\label{struct_e_easy_x_b_1_1_eeprom_data_a1b45633f372c529639415c9276f7def9}} 
+unsigned int {\bfseries parental\+Control\+Game}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a7d92e9329d99fb6ce98c244940042f95}\label{struct_e_easy_x_b_1_1_eeprom_data_a7d92e9329d99fb6ce98c244940042f95}} 
+unsigned int {\bfseries parental\+Control\+Passcode}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_aea20be5b54d9e90b4c175ee8fa5794de}\label{struct_e_easy_x_b_1_1_eeprom_data_aea20be5b54d9e90b4c175ee8fa5794de}} 
+unsigned int {\bfseries parental\+Control\+Movie}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a165c4acfca50209705c76aa17359fe61}\label{struct_e_easy_x_b_1_1_eeprom_data_a165c4acfca50209705c76aa17359fe61}} 
+unsigned int {\bfseries live\+Ip}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a894cb9d3e0331c3b3e4def955437457d}\label{struct_e_easy_x_b_1_1_eeprom_data_a894cb9d3e0331c3b3e4def955437457d}} 
+unsigned int {\bfseries live\+Dns}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a731999a8bbf39dc11865252897a4e8e6}\label{struct_e_easy_x_b_1_1_eeprom_data_a731999a8bbf39dc11865252897a4e8e6}} 
+unsigned int {\bfseries live\+Gateway}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ab5ad45c5f41ea78d0169bc92d6cfb6d1}\label{struct_e_easy_x_b_1_1_eeprom_data_ab5ad45c5f41ea78d0169bc92d6cfb6d1}} 
+unsigned int {\bfseries live\+Subnet}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_ae1eeef946b8198b3b4a989c617d8abbf}\label{struct_e_easy_x_b_1_1_eeprom_data_ae1eeef946b8198b3b4a989c617d8abbf}} 
+unsigned int {\bfseries unknown\+B8}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a926093b943517da575d5f8e78938761c}\label{struct_e_easy_x_b_1_1_eeprom_data_a926093b943517da575d5f8e78938761c}} 
+unsigned int {\bfseries dvd\+Zone}
+\item 
+\mbox{\Hypertarget{struct_e_easy_x_b_1_1_eeprom_data_a75b71ba9c43bbc8fa01064cab9e56589}\label{struct_e_easy_x_b_1_1_eeprom_data_a75b71ba9c43bbc8fa01064cab9e56589}} 
+unsigned char {\bfseries history} \mbox{[}64\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data structure to define the structure of the \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} on the original Xbox. 
+
+
+
+Definition at line 24 of file Eeprom\+Data.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Types/Eeprom\+Data.\+h\end{DoxyCompactItemize}

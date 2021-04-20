@@ -1,0 +1,260 @@
+\hypertarget{class_e_easy_x_b_1_1_eeprom}{}\doxysection{E\+Easy\+XB\+::Eeprom Class Reference}
+\label{class_e_easy_x_b_1_1_eeprom}\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+
+
+Wrapper class that provides functionality for reading eeprom data from the original Xbox, modifying it locally, and writing it back to the Xbox.  
+
+
+
+
+{\ttfamily \#include $<$Eeprom.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_aca71b12094e6be2fe003b84fcb5ec7c4}{Is\+Resolution\+Enabled}} (Supported\+Resolution resolution)
+\begin{DoxyCompactList}\small\item\em Checks to see if a resolution is currently enabed in the eeprom. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a5cbf9f55a94bcbf71c34b81e9a8cfe1e}{Is\+Audio\+Mode\+Enabled}} (Audio\+Mode audio\+Mode)
+\begin{DoxyCompactList}\small\item\em Checks to see if an audio mode is currently enabled in the eeprom. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_aead85962ea4f3e63a45a4e18a92d15de}{Is\+Aspect\+Ratio\+Enabled}} (Aspect\+Ratio aspect\+Ratio)
+\begin{DoxyCompactList}\small\item\em Checks to see if an aspect ratio is currently enabled in the eeprom. \end{DoxyCompactList}\item 
+Aspect\+Ratio \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a302171a3edf594acdcf6cf307a6eff7f}{Get\+Active\+Aspect\+Ratio}} ()
+\begin{DoxyCompactList}\small\item\em Get the Active Aspect Ratio object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a1c2449bcf20b91c45e87d9195b5bedc5}{Set\+Resolution\+Enabled}} (Supported\+Resolution resolution, bool is\+Enabled)
+\begin{DoxyCompactList}\small\item\em Set the enabled state of a given resolution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_aa5e1301e443c997e33dec5689cd273b2}{Set\+Active\+Aspect\+Ratio}} (Aspect\+Ratio aspect\+Ratio)
+\begin{DoxyCompactList}\small\item\em Set the active aspect ratio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_ab39ce0e9317ab8e76ed03090de2bc483}{Set\+Audio\+Mode\+Enabled}} (Audio\+Mode audio\+Mode, bool is\+Enabled)
+\begin{DoxyCompactList}\small\item\em Set the enabled state of a given audio mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a0b8b48d46cea53fcd76405d385504125}{Read}} ()
+\begin{DoxyCompactList}\small\item\em Reads the eeprom of the Xbox and stores it to the local eeprom data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a7ec73e96ee3acb308e025e25541fc80e}{Write}} ()
+\begin{DoxyCompactList}\small\item\em Writes the current modifications of the eeprom data to the eeprom of the Xbox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} $\ast$ \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom_a5aa1bef375fa36da233602e1b9ec0ede}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the Instance of the \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper class that provides functionality for reading eeprom data from the original Xbox, modifying it locally, and writing it back to the Xbox. 
+
+
+
+Definition at line 31 of file Eeprom.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a302171a3edf594acdcf6cf307a6eff7f}\label{class_e_easy_x_b_1_1_eeprom_a302171a3edf594acdcf6cf307a6eff7f}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!GetActiveAspectRatio@{GetActiveAspectRatio}}
+\index{GetActiveAspectRatio@{GetActiveAspectRatio}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{GetActiveAspectRatio()}{GetActiveAspectRatio()}}
+{\footnotesize\ttfamily Aspect\+Ratio E\+Easy\+X\+B\+::\+Eeprom\+::\+Get\+Active\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Active Aspect Ratio object. 
+
+\begin{DoxyReturn}{Returns}
+Aspect\+Ratio Enumeration of possible supported aspect ratios. Indexed by E\+Easy\+X\+B\+::\+Aspect\+Ratio. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a5aa1bef375fa36da233602e1b9ec0ede}\label{class_e_easy_x_b_1_1_eeprom_a5aa1bef375fa36da233602e1b9ec0ede}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} $\ast$ E\+Easy\+X\+B\+::\+Eeprom\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the Instance of the \mbox{\hyperlink{class_e_easy_x_b_1_1_eeprom}{Eeprom}} object. 
+
+\begin{DoxyReturn}{Returns}
+Eeprom$\ast$ Local object used to perform modifications of the Xbox eeprom. 
+\end{DoxyReturn}
+
+
+Definition at line 205 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_aead85962ea4f3e63a45a4e18a92d15de}\label{class_e_easy_x_b_1_1_eeprom_aead85962ea4f3e63a45a4e18a92d15de}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!IsAspectRatioEnabled@{IsAspectRatioEnabled}}
+\index{IsAspectRatioEnabled@{IsAspectRatioEnabled}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{IsAspectRatioEnabled()}{IsAspectRatioEnabled()}}
+{\footnotesize\ttfamily bool E\+Easy\+X\+B\+::\+Eeprom\+::\+Is\+Aspect\+Ratio\+Enabled (\begin{DoxyParamCaption}\item[{Aspect\+Ratio}]{aspect\+Ratio }\end{DoxyParamCaption})}
+
+
+
+Checks to see if an aspect ratio is currently enabled in the eeprom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aspect\+Ratio} & Enumeration of possible supported aspect ratios. Indexed by E\+Easy\+X\+B\+::\+Aspect\+Ratio. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the resolution is currently enabled in the eeprom. 
+
+false Otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a5cbf9f55a94bcbf71c34b81e9a8cfe1e}\label{class_e_easy_x_b_1_1_eeprom_a5cbf9f55a94bcbf71c34b81e9a8cfe1e}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!IsAudioModeEnabled@{IsAudioModeEnabled}}
+\index{IsAudioModeEnabled@{IsAudioModeEnabled}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{IsAudioModeEnabled()}{IsAudioModeEnabled()}}
+{\footnotesize\ttfamily bool E\+Easy\+X\+B\+::\+Eeprom\+::\+Is\+Audio\+Mode\+Enabled (\begin{DoxyParamCaption}\item[{Audio\+Mode}]{audio\+Mode }\end{DoxyParamCaption})}
+
+
+
+Checks to see if an audio mode is currently enabled in the eeprom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Mode} & Enumeration of possible supported audio modes. Indexed by E\+Easy\+X\+B\+::\+Audio\+Mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the resolution is currently enabled in the eeprom. 
+
+false Otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_aca71b12094e6be2fe003b84fcb5ec7c4}\label{class_e_easy_x_b_1_1_eeprom_aca71b12094e6be2fe003b84fcb5ec7c4}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!IsResolutionEnabled@{IsResolutionEnabled}}
+\index{IsResolutionEnabled@{IsResolutionEnabled}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{IsResolutionEnabled()}{IsResolutionEnabled()}}
+{\footnotesize\ttfamily bool E\+Easy\+X\+B\+::\+Eeprom\+::\+Is\+Resolution\+Enabled (\begin{DoxyParamCaption}\item[{Supported\+Resolution}]{resolution }\end{DoxyParamCaption})}
+
+
+
+Checks to see if a resolution is currently enabed in the eeprom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & Enumeration of possible supported resolutions. Indexed by E\+Easy\+X\+B\+::\+Supported\+Resolution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the resolution is current enabled in the eeprom. 
+
+false Otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a0b8b48d46cea53fcd76405d385504125}\label{class_e_easy_x_b_1_1_eeprom_a0b8b48d46cea53fcd76405d385504125}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!Read@{Read}}
+\index{Read@{Read}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily bool E\+Easy\+X\+B\+::\+Eeprom\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the eeprom of the Xbox and stores it to the local eeprom data. 
+
+\begin{DoxyReturn}{Returns}
+true If the operation was successful. 
+
+false Otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 215 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_aa5e1301e443c997e33dec5689cd273b2}\label{class_e_easy_x_b_1_1_eeprom_aa5e1301e443c997e33dec5689cd273b2}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!SetActiveAspectRatio@{SetActiveAspectRatio}}
+\index{SetActiveAspectRatio@{SetActiveAspectRatio}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{SetActiveAspectRatio()}{SetActiveAspectRatio()}}
+{\footnotesize\ttfamily void E\+Easy\+X\+B\+::\+Eeprom\+::\+Set\+Active\+Aspect\+Ratio (\begin{DoxyParamCaption}\item[{Aspect\+Ratio}]{aspect\+Ratio }\end{DoxyParamCaption})}
+
+
+
+Set the active aspect ratio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aspect\+Ratio} & Enumeration of possible supported aspect ratios. Indexed by E\+Easy\+X\+B\+::\+Aspect\+Ratio. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_ab39ce0e9317ab8e76ed03090de2bc483}\label{class_e_easy_x_b_1_1_eeprom_ab39ce0e9317ab8e76ed03090de2bc483}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!SetAudioModeEnabled@{SetAudioModeEnabled}}
+\index{SetAudioModeEnabled@{SetAudioModeEnabled}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{SetAudioModeEnabled()}{SetAudioModeEnabled()}}
+{\footnotesize\ttfamily void E\+Easy\+X\+B\+::\+Eeprom\+::\+Set\+Audio\+Mode\+Enabled (\begin{DoxyParamCaption}\item[{Audio\+Mode}]{audio\+Mode,  }\item[{bool}]{is\+Enabled }\end{DoxyParamCaption})}
+
+
+
+Set the enabled state of a given audio mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Mode} & Enumeration of possible supported audio modes. Indexed by E\+Easy\+X\+B\+::\+Audio\+Mode. \\
+\hline
+{\em is\+Enabled} & Flag defining the desired state of the Audio\+Mode provided. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a1c2449bcf20b91c45e87d9195b5bedc5}\label{class_e_easy_x_b_1_1_eeprom_a1c2449bcf20b91c45e87d9195b5bedc5}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!SetResolutionEnabled@{SetResolutionEnabled}}
+\index{SetResolutionEnabled@{SetResolutionEnabled}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{SetResolutionEnabled()}{SetResolutionEnabled()}}
+{\footnotesize\ttfamily void E\+Easy\+X\+B\+::\+Eeprom\+::\+Set\+Resolution\+Enabled (\begin{DoxyParamCaption}\item[{Supported\+Resolution}]{resolution,  }\item[{bool}]{is\+Enabled }\end{DoxyParamCaption})}
+
+
+
+Set the enabled state of a given resolution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & Enumeration of possible supported resolutions. Indexed by E\+Easy\+X\+B\+::\+Supported\+Resolution. \\
+\hline
+{\em is\+Enabled} & Flag defining the desired state of the Supported\+Resolution provided. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file Eeprom.\+cpp.
+
+\mbox{\Hypertarget{class_e_easy_x_b_1_1_eeprom_a7ec73e96ee3acb308e025e25541fc80e}\label{class_e_easy_x_b_1_1_eeprom_a7ec73e96ee3acb308e025e25541fc80e}} 
+\index{EEasyXB::Eeprom@{EEasyXB::Eeprom}!Write@{Write}}
+\index{Write@{Write}!EEasyXB::Eeprom@{EEasyXB::Eeprom}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily bool E\+Easy\+X\+B\+::\+Eeprom\+::\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes the current modifications of the eeprom data to the eeprom of the Xbox. 
+
+\begin{DoxyReturn}{Returns}
+true If the operation was successful. 
+
+false Otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file Eeprom.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Eeprom.\+h\item 
+Source/Eeprom.\+cpp\end{DoxyCompactItemize}
