@@ -50,8 +50,8 @@ namespace EEasyXB
         STEREO = 0,
         MONO = 0x00000001,
         SURROUND = 0x00000002,
-        SURROUND_AC3= 0x00010000,
-        SURROUND_DTS = 0x00020000
+        AC3= 0x00010000,
+        DTS = 0x00020000
     };
 } // namespace EEasyXB
 

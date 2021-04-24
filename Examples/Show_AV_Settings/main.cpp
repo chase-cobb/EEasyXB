@@ -57,8 +57,8 @@ int main(void) {
   bool isMonoEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::MONO);
   bool isStereoEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::STEREO);
   bool isSurroundEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND);
-  bool isSurroundAc3Enabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_AC3);
-  bool isSurroundDtsEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_DTS);
+  bool isSurroundAc3Enabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::AC3);
+  bool isSurroundDtsEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::DTS);
 
   debugPrint("Mono                : %s\n", isMonoEnabled ? enabled : disabled);
   debugPrint("Stereo              : %s\n", isStereoEnabled ? enabled : disabled);

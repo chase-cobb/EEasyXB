@@ -33,8 +33,8 @@ enum Selections
   AUDIO_MONO,
   AUDIO_STEREO,
   AUDIO_SURROUND,
-  AUDIO_SURROUND_AC3,
-  AUDIO_SURROUND_DTS,
+  AUDIO_AC3,
+  AUDIO_DTS,
   SAVE_CHANGES,
   CANCEL_CHANGES,
   MAX
@@ -150,13 +150,13 @@ int main(void)
              "surround -> " <<
              (xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND) ? enabled : disabled) <<
              "\n";
-      oss << (((Selections)currentSelection == Selections::AUDIO_SURROUND_AC3) ? selected : unselected) <<
+      oss << (((Selections)currentSelection == Selections::AUDIO_AC3) ? selected : unselected) <<
              "AC3      -> " <<
-             (xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_AC3) ? enabled : disabled) <<
+             (xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::AC3) ? enabled : disabled) <<
              "\n";
-      oss << (((Selections)currentSelection == Selections::AUDIO_SURROUND_DTS) ? selected : unselected) <<
+      oss << (((Selections)currentSelection == Selections::AUDIO_DTS) ? selected : unselected) <<
              "DTS      -> " <<
-             (xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_DTS) ? enabled : disabled) <<
+             (xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::DTS) ? enabled : disabled) <<
              "\n-------------------\n";
 
       oss << (((Selections)currentSelection == Selections::SAVE_CHANGES) ? selected : unselected) <<
@@ -167,14 +167,7 @@ int main(void)
       // change current selection
       if(SDL_GameControllerGetButton(pad, SDL_CONTROLLER_BUTTON_DPAD_DOWN) == 1)
       {
-        if(currentSelection == Selections::AUDIO_SURROUND && !xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND))
-        {
-          currentSelection = (int)Selections::SAVE_CHANGES;
-        }
-        else
-        {
-          currentSelection++;
-        }
+        currentSelection++;
 
         if(currentSelection == Selections::MAX)
         {
@@ -183,14 +176,7 @@ int main(void)
       }
       else if(SDL_GameControllerGetButton(pad, SDL_CONTROLLER_BUTTON_DPAD_UP) == 1)
       {
-        if(currentSelection == Selections::SAVE_CHANGES && !xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND))
-        {
-          currentSelection = (int)Selections::AUDIO_SURROUND;
-        }
-        else
-        {
-          currentSelection--;
-        }
+        currentSelection--;
 
         if(currentSelection < 0)
         {
@@ -254,16 +240,16 @@ int main(void)
             xbEeprom->SetAudioModeEnabled(EEasyXB::AudioMode::SURROUND, !isEnabled);
             break;
           }
-          case Selections::AUDIO_SURROUND_AC3:
+          case Selections::AUDIO_AC3:
           {
-            bool isEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_AC3);
-            xbEeprom->SetAudioModeEnabled(EEasyXB::AudioMode::SURROUND_AC3, !isEnabled);
+            bool isEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::AC3);
+            xbEeprom->SetAudioModeEnabled(EEasyXB::AudioMode::AC3, !isEnabled);
             break;
           }
-          case Selections::AUDIO_SURROUND_DTS:
+          case Selections::AUDIO_DTS:
           {
-            bool isEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::SURROUND_DTS);
-            xbEeprom->SetAudioModeEnabled(EEasyXB::AudioMode::SURROUND_DTS, !isEnabled);
+            bool isEnabled = xbEeprom->IsAudioModeEnabled(EEasyXB::AudioMode::DTS);
+            xbEeprom->SetAudioModeEnabled(EEasyXB::AudioMode::DTS, !isEnabled);
             break;
           }
           case Selections::SAVE_CHANGES:
