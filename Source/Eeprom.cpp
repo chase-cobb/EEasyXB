@@ -146,8 +146,7 @@ namespace EEasyXB
                     case AudioMode::MONO:
                     {
                         m_data.audioSettings &= ~(AudioMode::SURROUND | 
-                                                  AudioMode::AC3 |
-                                                  AudioMode::DTS);
+                                                  AudioMode::AC3);
                         m_data.audioSettings |= AudioMode::MONO;
                         break;
                     }
@@ -166,7 +165,7 @@ namespace EEasyXB
                     }
                     case AudioMode::AC3:
                     {
-                        if(IsAudioModeEnabled(AudioMode::SURROUND) || IsAudioModeEnabled(AudioMode::STEREO))
+                        if(IsAudioModeEnabled(AudioMode::SURROUND))
                         {
                             m_data.audioSettings |= AudioMode::AC3;
                         }
