@@ -173,10 +173,7 @@ namespace EEasyXB
                     }
                     case AudioMode::DTS:
                     {
-                        if(IsAudioModeEnabled(AudioMode::SURROUND) || IsAudioModeEnabled(AudioMode::STEREO))
-                        {
-                            m_data.audioSettings |= AudioMode::DTS;
-                        }
+                        m_data.audioSettings |= AudioMode::DTS;
                         break;
                     }
                 }
